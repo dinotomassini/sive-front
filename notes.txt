@@ -1,0 +1,23 @@
+* Validaciones HTML
+  - pattern [0-9]{16} -> solo digitos hasta 16 numeros
+
+* Login
+  - El usuario y el vendedor ingresan en la misma pantalla del login, el sistema lo redirige a donde corresponda. (¿como saber que rol tiene, hay que guardar este rol en la base de datos?)
+  - Login de la empresa intentar cambiar con JS el input del mail y poner un input de rut.
+  - 
+
+* Estruturacion
+  - En las views las separo por rol de usuario (admin, empresa, vendedor y cliente) o por funcionalidad (login, registro, formularios, compra, perfiles, etc).
+  -  
+
+* Compra
+  - Pasos: 1-Detalle factura(CARRO) | 2-Datos de envio(ENTREGA) | 3-Forma de pago(PAGO) 
+  - Si no esta logeado puede llegar hasta el carrito, cuando da a comprar, lo lleva a la pagina de login o de registro, guardar el carro para cuando se logee agregarselo a su carro.
+  - 
+
+* APARTADO DE LINKS
+  - Ejemplos de aplicaciones con PHP - https://www.tutorialesprogramacionya.com/desarrollowebconphp/index.php?inicio=0
+  - Expresion regular para corroborar emails: \b[\w\.-]+@[\w\.-]+\.\w{2,4}\b
+  - AYAX: https://www.tutorialesprogramacionya.com/ajaxya/index.php
+  - JQUERY: https://www.tutorialesprogramacionya.com/javascriptya/jquery/index.php?inicio=0
+  - PHP: https://www.tutorialesprogramacionya.com/phpya/
