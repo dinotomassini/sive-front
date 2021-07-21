@@ -9,13 +9,13 @@ require "./views/partials/menuBar.php";
 <!-- BUSCADOR -->
 <section id="buscador" class="container mt-3 mb-3">
   <form class="d-flex mx-auto" style="max-width: 38rem;">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
     <button class="btn btn-outline-success" type="submit">Buscar</button>
   </form>
 </section>
 
 <!-- CAMINO PARA NAVEGAR MAS FACILMENTE -->
-<nav class="container p-3" style="--bs-breadcrumb-divider: ' |';" aria-label="breadcrumb">
+<nav class="container p-3" style="--bs-breadcrumb-divider: ' | ';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Inicio</li>
     <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
@@ -24,8 +24,7 @@ require "./views/partials/menuBar.php";
 </nav>
 
 <!-- SECCION DE CARRUSEL DE OFERTAS -->
-<section id="ofertas" class="container">
-  <h2>OFERTAS</h2>
+<section id="ofertas" class="container mb-3">
   <!-- CAROUSEL -->
   <div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel">
     <!-- INDICADORES DEL CAROUSEL -->
@@ -76,7 +75,7 @@ require "./views/partials/menuBar.php";
 </section>
 
 <!-- SECCION PRODUCTOS DESTACADOS -->
-<section id="destacados" class="container mt-3">
+<section id="destacados" class="container mt-3 mb-3">
   <h3 class="text-center">DESTACADOS</h3>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">

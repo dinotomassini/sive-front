@@ -1,14 +1,14 @@
 <?php
-require "./partials/head.php";
+require "../partials/head.php";
 ?>
 <?php
-require "./partials/menuBar.php";
+require "../partials/menuBar.php";
 ?>
 <main class="container mb-5">
   <h1 class="text-center mb-3">Formulario de registro de clientes</h1>
   <div class="card mx-auto" style="max-width: 26rem;">
     <form id="signupForm" action="#" method="post" class="m-3">
-      <p>Ingrese sus datos, luego en su perfil puede y debería completar sus datos personales.</p>
+      <p>Ingrese los datos mínimos, le recomendamos luego completar todos sus datos personales en su perfil.</p>
       <!-- <div class="form-group">
         <label for="name">Nombre:</label>
         <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" autofocus
@@ -109,5 +109,5 @@ require "./partials/menuBar.php";
 </main>
 
 <?php
-require "./partials/footer.php";
+require "../partials/footer.php";
 ?>

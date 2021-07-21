@@ -1,8 +1,8 @@
 <?php
-require "./partials/head.php";
+require "../partials/head.php";
 ?>
 <?php
-require "./partials/menuBar.php";
+require "../partials/menuBar.php";
 ?>
 
 <main class="container mb-5">
@@ -40,5 +40,5 @@ require "./partials/menuBar.php";
 
 
 <?php
-require "./partials/footer.php";
+require "../partials/footer.php";
 ?>

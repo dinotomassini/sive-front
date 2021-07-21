@@ -8,8 +8,6 @@ require "./partials/menuBar.php";
 
 <main class="container mb-5">
 
-  <h1>LOGIN WORKS</h1>
-
   <div class="card mx-auto" style="max-width: 26rem;">
 
     <!-- row rows-column-sm-1 m-5 -->
@@ -28,13 +26,15 @@ require "./partials/menuBar.php";
     <div class="row">
       <div class="col">
         <form id="loginForm" action="#" method="post" class="m-3">
-          <!-- esto de que entre como empresa que lo que pide es el rut en vez del mail, se puede hacer con js para que saque la parte del email y ponga el campo del rut -->
-          <!--
-              <a href="./loginEmpresa.php">
-                <span class="badge bg-warning">Ingrese como empresa -></span>
-              </a>
-            -->
-          <div class="form-group">
+
+          <div class="d-flex justify-content-end">
+            <div id="loginCompany">
+              <span id="loginCompanyText" class="badge bg-warning">Ingrese como empresa --></span>
+            </div>
+          </div>
+
+          <!-- INPUT MAIL -->
+          <div id="inputEmail" class="form-group">
             <div class="form-floating m-3">
               <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus
                 required>
@@ -42,6 +42,19 @@ require "./partials/menuBar.php";
               <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
             </div>
           </div>
+
+          <!-- INPUT RUT -->
+          <div id="inputRut" class="form-group" hidden>
+            <div class="form-floating m-3">
+              <!-- pattern="/^([0-9])*$/" -->
+              <input type="text" name="rut" id="rut" placeholder="Ingrese su RUT" class="form-control" autofocus
+                required>
+              <label for="rut">RUT:</label>
+              <small id="rutHelper" class="form-text text-muted">Solo se aceptan números.</small>
+            </div>
+          </div>
+
+          <!-- INPUT PASS -->
           <div class="form-group">
             <div class="form-floating m-3">
               <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña"
@@ -49,6 +62,8 @@ require "./partials/menuBar.php";
               <label for="pass">Contraseña</label>
             </div>
           </div>
+
+          <!-- BOTON INGRESAR -->
           <div class="form-group d-flex justify-content-center">
             <button type="submit" id="btnSubmitLogin" class="btn btn-primary w-50 mt-3">Ingresar</button>
           </div>
@@ -57,9 +72,36 @@ require "./partials/menuBar.php";
     </div>
 
   </div>
-  </div>
+
 </main>
 
 <?php
 require "./partials/footer.php";
 ?>
+
+<script>
+$(document).ready(
+  $('#loginCompany').click(changeWhoLogin),
+);
+
+/**
+ * Funcion para mostrar u ocultar el campo de mail o de rut
+ */
+function changeWhoLogin() {
+  InputEmail = $('#inputEmail');
+  InputRut = $('#inputRut');
+  TextWhoLogin = $('#loginCompanyText')
+
+  if (InputRut.attr('hidden')) {
+    // Ingreso como empresa
+    InputRut.removeAttr('hidden');
+    InputEmail.attr('hidden', true);
+    TextWhoLogin.text('Ingrese como cliente o vendedor -->');
+  } else {
+    // Ingreso como cliente o vendedor
+    InputRut.attr('hidden', true);
+    InputEmail.removeAttr('hidden');
+    TextWhoLogin.text('Ingrese como empresa -->');
+  }
+}
+</script>

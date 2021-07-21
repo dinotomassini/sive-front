@@ -1,8 +1,8 @@
 <?php
-require "./partials/head.php";
+require "../partials/head.php";
 ?>
 <?php
-require "./partials/menuBar.php";
+require "../partials/menuBar.php";
 ?>
 <main class="container">
   <h1 class="text-center mb-3">Formulario de empresa</h1>
@@ -101,5 +101,5 @@ require "./partials/menuBar.php";
 </main>
 
 <?php
-require "./partials/footer.php";
+require "../partials/footer.php";
 ?>
