@@ -6,11 +6,11 @@
 </footer>
 
 <!-- SCRIPTS BOOTSTRAP -->
-<script src="/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="/sive-front/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 <!-- SCRIPTS JQUERY -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- SCRIPTS PROPIOS -->
-<script src="/assets/js/main.js"></script>
+<script src="/sive-front/assets/js/main.js"></script>
 </body>
 
 </html>

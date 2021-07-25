@@ -10,10 +10,9 @@ require "./partials/menuBar.php";
 
   <div class="card mx-auto" style="max-width: 26rem;">
 
-    <!-- row rows-column-sm-1 m-5 -->
     <div class="row m-3">
       <div class="col">
-        <img src="/assets/images/logo.png" alt="IMAGEN" width="80px" class="d-block mx-auto">
+        <img src="/sive-front/assets/images/logo.png" alt="IMAGEN" width="80px" class="d-block mx-auto">
       </div>
     </div>
 
@@ -29,7 +28,8 @@ require "./partials/menuBar.php";
 
           <div class="d-flex justify-content-end">
             <div id="loginCompany">
-              <span id="loginCompanyText" class="badge bg-warning">Ingrese como empresa --></span>
+              <span id="loginCompanyText" class="badge bg-warning" style="cursor: pointer;">Ingrese como empresa
+                --></span>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ require "./partials/menuBar.php";
               <!-- pattern="/^([0-9])*$/" -->
               <input type="text" name="rut" id="rut" placeholder="Ingrese su RUT" class="form-control" autofocus
                 required>
-              <label for="rut">RUT:</label>
+              <label for="rut">RUT</label>
               <small id="rutHelper" class="form-text text-muted">Solo se aceptan números.</small>
             </div>
           </div>
@@ -85,7 +85,7 @@ $(document).ready(
 );
 
 /**
- * Funcion para mostrar u ocultar el campo de mail o de rut
+ * Funcion para mostrar u ocultar el campo de email o de rut
  */
 function changeWhoLogin() {
   InputEmail = $('#inputEmail');

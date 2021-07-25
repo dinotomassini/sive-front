@@ -2,8 +2,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top container-fluid d-flex">
 
   <!-- LOGO E LINK AL HOMEPAGE -->
-  <a class="navbar-brand" href="/">
-    <img src="/assets/images/logo.png" alt="LOGO SIVE" width="30" height="30" class="d-inline-block align-text-top">
+  <a class="navbar-brand" href="/sive-front">
+    <img src="/sive-front/assets/images/logo.png" alt="LOGO SIVE" width="30" height="30"
+      class="d-inline-block align-text-top">
     S.I.V.E.
   </a>
 
@@ -21,13 +22,13 @@
     <div id="navbarMenu">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="/sive-front">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/customer/signinCustomer.php">Registrarse</a>
+          <a class="nav-link" href="/sive-front/views/customer/customerRegistrationForm.php">Registrarse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/login.php">Ingresar</a>
+          <a class="nav-link" href="/sive-front/views/login.php">Ingresar</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Ofertas</a>
@@ -36,10 +37,10 @@
           <a class="nav-link" href="#">Categorias</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="/views/customer/shoppingCart.php">Carrito</a>
+          <a class="nav-link" href="/sive-front/views/customer/shoppingCart.php">Carrito</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/customer/contactForm.php">Contacto</a>
+          <a class="nav-link" href="/sive-front/views/customer/contactForm.php">Contacto</a>
         </li>
       </ul>
     </div>
