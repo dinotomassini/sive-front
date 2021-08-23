@@ -3,8 +3,7 @@
 
   <!-- LOGO E LINK AL HOMEPAGE -->
   <a class="navbar-brand" href="/sive-front">
-    <img src="/sive-front/assets/images/logo.png" alt="LOGO SIVE" width="30" height="30"
-      class="d-inline-block align-text-top">
+    <img src="/assets/images/logo.png" alt="LOGO SIVE" width="30" height="30" class="d-inline-block align-text-top">
     S.I.V.E.
   </a>
 
@@ -25,10 +24,10 @@
           <a class="nav-link active" aria-current="page" href="/sive-front">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sive-front/views/customer/customerRegistrationForm.php">Registrarse</a>
+          <a class="nav-link" href="/views/customer/customerRegistrationForm.php">Registrarse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sive-front/views/login.php">Ingresar</a>
+          <a class="nav-link" href="/views/login.php">Ingresar</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Ofertas</a>
@@ -37,10 +36,10 @@
           <a class="nav-link" href="#">Categorias</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="/sive-front/views/customer/shoppingCart.php">Carrito</a>
+          <a class="nav-link" href="/views/customer/shoppingCart.php">Carrito</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sive-front/views/customer/contactForm.php">Contacto</a>
+          <a class="nav-link" href="/views/customer/contactForm.php">Contacto</a>
         </li>
       </ul>
     </div>

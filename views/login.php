@@ -12,7 +12,7 @@ require "./partials/menuBar.php";
 
     <div class="row m-3">
       <div class="col">
-        <img src="/sive-front/assets/images/logo.png" alt="IMAGEN" width="80px" class="d-block mx-auto">
+        <img src="/assets/images/logo.png" alt="IMAGEN" width="80px" class="d-block mx-auto">
       </div>
     </div>
 
