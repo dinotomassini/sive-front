@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top container-fluid d-flex">
 
     <!-- LOGO E LINK AL HOMEPAGE -->
-    <a class="navbar-brand" href="/sive-front">
+    <a class="navbar-brand" href="/">
       <img src="/assets/images/logo.png" alt="LOGO SIVE" width="30" height="30" class="d-inline-block align-text-top">
       S.I.V.E.
     </a>
@@ -40,13 +40,13 @@
       <div id="navbarMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/sive-front">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/views/customer/customerRegistrationForm.php">Registrarse</a>
+            <a class="nav-link" href="/views/cliente/formularioRegistroCliente.html">Registrarse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/views/login.php">Ingresar</a>
+            <a class="nav-link" href="/views/login.html">Ingresar</a>
           </li>
           <!-- <li class="nav-item">
           <a class="nav-link" href="#">Ofertas</a>
@@ -55,10 +55,10 @@
           <a class="nav-link" href="#">Categorias</a>
         </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="/views/customer/shoppingCart.php">Carrito</a>
+            <a class="nav-link" href="/views/cliente/carrito.html">Carrito</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/views/customer/contactForm.php">Contacto</a>
+            <a class="nav-link" href="/views/cliente/formularioContacto.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -66,59 +66,44 @@
     </div>
   </nav>
 
-  <!-- ESTE LOGIN YA ESTA EN EL LOGIN GENERAL -->
-  <main class="container">
-
-    <h1>LOGIN EMPRESA WORKS</h1>
-
+  <main class="container mb-5">
+    <h1 class="text-center mb-3">Formulario de contacto</h1>
     <div class="card mx-auto" style="max-width: 26rem;">
+      <form id="contactForm" action="#" method="post" class="m-3">
 
-      <div class="row m-3">
-        <div class="col">
-          <img src="/assets/images/logo.png" alt="IMAGEN" width="80px" class="d-block mx-auto">
+        <div class="form-group">
+          <div class="form-floating m-3">
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" autofocus
+              required>
+            <label for="name">Nombre</label>
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h2 class="text-center text-muted mt-2">SIVE</h2>
+        <div class="form-group">
+          <div class="form-floating m-3">
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" required>
+            <label for="mail">Email</label>
+          </div>
+          <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <form id="loginCompanyForm" action="#" method="post" class="m-3">
-            <div class="form-group">
-              <div class="form-floating m-3">
-                <!-- pattern="/^([0-9])*$/" -->
-                <input type="text" name="rut" id="rut" placeholder="Ingrese su RUT" class="form-control" autofocus
-                  required>
-                <label for="rut">RUT:</label>
-                <small id="rutHelper" class="form-text text-muted">Solo se aceptan números.</small>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-floating m-3">
-                <input type="password" name="pass" id="pass" minlength="6" placeholder="Ingrese su contraseña"
-                  class="form-control" required>
-                <label for="pass">Contraseña:</label>
-              </div>
-            </div>
-
-            <div class="form-group d-flex justify-content-center">
-              <button type="submit" id="btnSubmitLogin" class="btn btn-primary w-50 mt-3">Ingresar</button>
-            </div>
-          </form>
+        <div class="form-group">
+          <div class="form-floating m-3">
+            <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" class="form-control"
+              style="height: 150px;"></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
         </div>
-      </div>
-
+        <div class="form-group">
+          <button type="submit" id="btnSubmitContact" class="btn btn-primary btn-block">Enviar</button>
+        </div>
+      </form>
     </div>
   </main>
+
 
   <!-- FOOTER -->
   <footer class="bg-warning container-fluid">
     <p class="text-muted text-center">
-      | Grupo <strong>bit&bit</strong> | Proyecto S.I.V.E. | 2021 |
+      | Grupo <strong>AFM Tech System</strong> | Proyecto S.I.V.E. | 2021 |
     </p>
   </footer>
 
