@@ -76,15 +76,40 @@
           required>
       </div> -->
 
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <div class="form-floating m-3">
+                <input type="text" name="celular" id="celular" placeholder="Ingrese su celular" class="form-control" pattern="/^([0-9])*$/" required>
+                <label for="celular">Celular</label>
+              </div>
+              <!-- pattern="/^([0-9])*$/"
+              <small id="celularHelp" class="form-text text-muted">Solo se aceptan números.</small> -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">  
+          <div class="col">
+            <div class="form-group">
+              <div class="form-floating m-3">
+                <input type="text" name="cedula" id="cedula" minlength="7" maxlength="8" placeholder="Ingrese su cedula (12345678)" class="form-control" pattern="/^([0-9])*$/" required>
+              <label for="cedula">Cedula</label>
+              </div>
+              <!-- pattern="/^([0-9])*$/" 
+              <small id="cedulaHelp" class="form-text text-muted">Solo se aceptan números.</small>-->
+            </div>
+          </div>
+        </div>
 
         <div class="row">
           <div class="col">
             <div class="form-group">
               <div class="form-floating m-3">
-                <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" autofocus
-                  required>
+                <input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="form-control" required>
                 <label for="mail">Email</label>
               </div>
+
               <!-- En este input de tipo email, es valido ingresar algo@algo , no es necesario agregar el .algo , esto habria que verlo con JS -->
             </div>
           </div>
